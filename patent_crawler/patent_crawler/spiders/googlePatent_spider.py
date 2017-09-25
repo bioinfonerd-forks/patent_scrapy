@@ -71,7 +71,7 @@ class GooglePatentSpider(scrapy.Spider):
                 else:
                     result.update({tempbib[0].encode('utf8'): tempbib[1].encode('utf8')})
 
-        uri = "mongodb://ehang:12345677@140.117.69.70:30241/Pattern"
+        uri = 'connect information'
         client = MongoClient(uri)
         db = client.Pattern
         collection = db.google_patent
